@@ -1,0 +1,32 @@
+<html>
+  
+  <head>
+    <title>MBOT</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='admis.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' />
+  </head>
+  <body bgcolor="black">
+    <nav>
+      <div class="container1">
+        <div class="logo"><a href="/">TuneHub</a></div>
+        <div class="menu">
+          <ul>
+            
+            <li><a href="{{url_for('reviewk')}}"><ok>review</ok></a></li>
+            <li><a href="{{url_for('logindetails')}}"><ok>login details</ok></a></li>
+            <li><a href="{{url_for('help')}}"><ok>help</ok></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="first">
+      <h1>Explore the world of music</h1>
+    </div>
+    <br><br>
+    
+    
+  </body>
+</html>

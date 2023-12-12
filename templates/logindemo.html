@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>login</title>
+        <link rel="stylesheet" href="static/stylelg.css">
+        <script src="https://kit.fontawesome.com/d75cbd6376.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="cont">
+            <div class="formbox">
+               <u> <h1>sign up</h1></u>
+                <form action="{{ url_for('logindemo') }}" method="post">
+                    <div class="ipg">
+                        <div class="ipf">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/>
+                        </div>
+                        <div class="ipf">
+                            <i class="fa-solid fa-lock"></i>
+                            <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/>
+                        </div>
+                        
+  
+                    </div>
+                    <div class="btnf">
+                       <br><br><button type="submit" class="btn">Login</button></br></br>
+                    </div>
+                    <br><p class="bottom">Don't have an account?  <a class="bottom" href="{{url_for('register')}}"> Sign Up here</a></p>
+
+                </form>
+
+
+            </div>
+            
+        </div>
+
+    </body>
+</html>

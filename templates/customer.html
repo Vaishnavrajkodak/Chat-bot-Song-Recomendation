@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Customer</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style6.css') }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<body>
+	
+	<div id="mySidenav" class="sidenav">
+	<p class="logo"><span></span>STOX</p>
+  <a href="{{url_for('index')}}" class="icon-a"><i class="fa fa-dashboard icons"></i> &nbsp;&nbsp;HOME</a>
+ 
+</div>
+<div id="main">
+
+	<div class="head">
+		<div class="col-div-6">
+<span style="font-size:30px;cursor:pointer; color: white;" class="nav"  >&#9776; Dashboard</span>
+<span style="font-size:30px;cursor:pointer; color: white;" class="nav2"  >&#9776; Dashboard</span>
+</div>
+	
+		<div class="clearfix"></div>
+</div>
+
+	<div class="clearfix"></div>
+	<br/>
+	
+	<div class="clearfix"></div>
+	<br/><br/>
+	<div class="col-div-8">
+		<div class="box-8">
+		<div class="content-box">
+			<p>USER <span>DETAILS</span></p>
+			<br/>
+			<table>
+  <tr>
+    <th>USERNAME</th>
+    <th>PASSWORD</th>
+    <th>EMAIL</th>
+  </tr>
+  {% for row in data %}
+  <tr>
+    <td>{{ row[0] }}</td>
+    <td>{{ row[1] }}</td>
+    <td>{{ row[2] }}</td>
+  </tr>
+  {% endfor %}  
+  
+</table>
+		</div>
+	</div>
+	</div>
+</div>
+
+</body>
+
+</html>

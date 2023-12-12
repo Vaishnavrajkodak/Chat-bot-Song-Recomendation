@@ -1,0 +1,337 @@
+<html>
+  
+  <head>
+    <title>MBOT</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style2.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width , initial-scale=1">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css' rel='stylesheet'>
+
+    
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+
+  </head>
+  <body bgcolor="black">
+    <nav>
+      <div class="container1">
+        <div class="logo" id="homepage"><a href="/">TuneHub</a></div>
+        <div class="menu">
+          <ul>
+            <li><a href="{{url_for('mbot')}}"><ok>MBOT</ok></a></li>
+            <li><a href="{{url_for('about')}}"><ok>about us</ok></a></li>
+            <li><a href="{{url_for('help')}}"><ok>help</ok></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="first">
+      <h1>Explore the world of music</h1>
+    </div>
+    
+    <div class="second">
+      <div class="cont">
+        <div id="slider">
+          <div class="msgcol">
+            <h1>Mbot</h1>
+            <p>welcome to the world of <br>
+              music<br>
+            we are hear for supply unlimitad<br>
+            music and wibe
+            </p>
+        </div>
+        <div class="msgcol">
+          <h1>endless music</h1>
+          <p>we are hear for endless music all day<br>
+           all time <br>
+          </p>
+      </div>
+      <div class="msgcol">
+        <h1>we are hear to give u best</h1>
+        <p>just talk to us.
+        we give u the best songs to make u happy
+        </p>
+    </div>
+    <div class="msgcol">
+      <h1>spread the love and the music </h1>
+      <p>
+      share our page to the people who u love<br>
+      spread the love
+      </p>
+  </div>
+      </div>
+
+    </div>
+    <div class="conta">
+      <div id="line1"></div>
+      <div id="line2"></div>
+      <div id="line3"></div>
+      <div id="line4"></div>
+      <div id="active"></div>
+
+      </div>
+    </div>
+    
+    <script>
+      var slider =document.getElementById('slider');
+      var active =document.getElementById('active');
+      var line1 =document.getElementById('line1');
+      var line2 =document.getElementById('line2');
+      var line3 =document.getElementById('line3');
+      var line4 =document.getElementById('line4');
+
+      line1.onclick =function()
+      {
+        slider.style.transform = 'translateX(0)';
+        active.style.top = '0px';
+      }
+      line2.onclick =function()
+      {
+        slider.style.transform = 'translateX(-25%)';
+        active.style.top = '80px';
+      }
+      line3.onclick =function()
+      {
+        slider.style.transform = 'translateX(-50%)';
+        active.style.top = '160px';
+      }
+      line4.onclick =function()
+      {
+        slider.style.transform = 'translateX(-75%)';
+        active.style.top = '240px';
+      }
+
+
+    </script>
+    <div class="abu">
+    <a href="{{url_for('love')}}"> <div class="house" style="background-image: url('/static/love1.jpg');" >
+    <div class="house-inner">
+               <div class="sigil">
+               </div>
+               <div class="house-name">love</div>
+           </div></a>
+
+       </div>
+       <a href="{{url_for('gym')}}"><div class="house" style="background-image: url('/static/gym1.jpg');" >
+           <div class="house-inner">
+               <div class="sigil">
+               </div>
+               <div class="house-name">gym</div>
+           </div></a>
+
+       </div>
+       <a href="{{url_for('chillout')}}"><div class="house" style="background-image: url('/static/party12.jpg');" >
+        <div class="house-inner">
+            <div class="sigil">
+            </div>
+            <div class="house-name">chillout</div>
+        </div></a>
+
+    </div>
+    <a href="{{url_for('sad')}}"><div class="house" style="background-image: url('/static/sad.jpg');" >
+      <div class="house-inner">
+          <div class="sigil">
+          </div>
+          <div class="house-name">sad</div>
+      </div></a>
+
+  </div>
+     </div> 
+     <div class="top_tracks" id="top_tracks">
+      <p id="heading"><i class='bx bxs-playlist'></i>&nbsp;&nbsp;Top Tracks</p>
+      <div id="track"></div>
+      
+      <div id="track">
+          <img src="static/images/2.jpg" alt="">
+          <div id="actions">
+              <a href="#"><i class='bx bx-heart' ></i></a>
+              <a id="play_pause"><i class='bx bx-play'></i></a>
+          </div>
+  
+          <audio src="static/music/2.mp4" id="music"></audio>
+  
+          <div id="song_desc">
+             <p>jimikki ponnu</p>
+             <p>vaarise</p>
+          </div>
+          <div id="actions_2">
+            
+          </div>
+      </div>
+  
+      <div id="track">
+          <img src="static/images/100.jpg" alt="">
+          <div id="actions">
+              <a href="#"><i class='bx bx-heart' ></i></a>
+              <a id="play_pause"><i class='bx bx-play'></i></a>
+          </div>
+          <audio src="static/music/100.mp4" id="music"></audio>
+  
+          <div id="song_desc">
+              <p>romanjam</p>
+             <p>romanjam</p>
+             <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+             <p id="message">New</p>
+          </div>
+  
+          <div id="actions_2">
+            <p><i class='bx bx-share' ></i></p>
+            <p><a href="1.mp3" download><i class='bx bx-download'></i></a></p>
+          </div>
+      </div>
+  
+      <div id="track">
+          <img src="static/image3/3.jpg" alt="">
+          <div id="actions">
+              <a href="#"><i class='bx bx-heart' ></i></a>
+              <a id="play_pause"><i class='bx bx-play'></i></a>
+          </div>
+          <audio src="static/music3/5.m4a" id="music"></audio>
+  
+          <div id="song_desc">
+               <p>pathan</p>
+               <p>pathan</p>
+               <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+               <p id="message">New</p>
+          </div>
+  
+          <div id="actions_2">
+            <p><i class='bx bx-share' ></i></p>
+            <p><a href="3.mp3" download><i class='bx bx-download'></i></a></p>
+          </div>
+      </div>
+  
+      <div id="track">
+          <img src="song_img/song_img1.jpg" alt="">
+          <div id="actions">
+              <a href="#"><i class='bx bx-heart' ></i></a>
+              <a id="play_pause"><i class='bx bx-play'></i></a>
+          </div>
+          <audio src="songs/4.mp3" id="music"></audio>
+  
+          <div id="song_desc">
+               <p>dev ideas favourite song</p>
+               <p>Devideas</p>
+               <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+          </div>
+  
+          <div id="actions_2">
+            <p><i class='bx bx-share' ></i></p>
+            <p><a href="4.mp3" download><i class='bx bx-download'></i></a></p>
+          </div>
+      </div>
+  
+      <div id="track">
+          <img src="song_img/song_img2.jpg" alt="">
+          <div id="actions">
+              <a href="#"><i class='bx bx-heart' ></i></a>
+              <a id="play_pause"><i class='bx bx-play'></i></a>
+          </div>
+          <audio src="songs/5.mp3" id="music"></audio>
+  
+          <div id="song_desc">
+               <p>dev ideas favourite song</p>
+               <p>Devideas</p>
+               <p id="total_download"><i class='bx bx-download'></i>&nbsp;&nbsp;2000+</p>
+          </div>
+  
+          <div id="actions_2">
+            <p><i class='bx bx-share' ></i></p>
+            <p><a href="5.mp3" download><i class='bx bx-download'></i></a></p>
+          </div>
+      </div>
+  
+  </div>
+  <div class="container-fluid bg-primary text-white footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5 px-lg-5">
+        <div class="row gy-5 gx-4 pt-5">
+            <div class="col-12">
+                
+                <div class="position-relative" style="max-width: 400px;">
+                    
+                    
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <div class="row gy-5 g-4">
+                    <div class="col-md-6">
+                        <h5 class="fw-bold text-white mb-4">About Us</h5>
+                        <a class="btn btn-link" href="about.html">About Us</a>
+                        <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h5 class="fw-bold text-white mb-4">Get In Touch</h5>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3">   kanayi , Payyanur , Kerala</i></p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91 6235128725</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>SongBot005@gmail.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/c/AKWorldtimes"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mt-lg-n5">
+                <div class="bg-light rounded" style="padding: 30px;">
+                <form action="{{url_for('reviews')}}" method="post">
+                    <input type="text" class="form-control border-0 py-2 mb-2" placeholder="Name" id="name" name="name">
+                    <input type="email" class="form-control border-0 py-2 mb-2" placeholder="Email" id="emaik" name="email">
+                    <textarea class="form-control border-0 mb-2" rows="2" placeholder="Message" id="msg" name="msg"></textarea>
+                    <button type="submit" class="btn btn-primary w-100 py-2">Send Message</button>
+                </form></div>
+            </div>
+        </div>
+    </div>
+    <div class="container px-lg-5">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom" href="#">MBOT</a>, All Right Reserved. 
+      
+      <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+      Designed By <a class="border-bottom" href="">ABU,VAISHNAV,ABHAY</a>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu">
+                        <a href="#homepage">Home</a>
+                        <a href="help.html">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+  
+  
+  <!-- Back to Top -->
+  
+  </div>
+  
+  <script src="{{ url_for('static', filename='c.js') }}"></script>
+     
+
+     <script>
+      var $SCRIPT_ROOT = '{{ request.script_root|tojson|safe }}';
+      
+  </script>
+  <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script> 
+  
+
+
+  
+
+    
+
+    
+    
+  </body>
+</html>

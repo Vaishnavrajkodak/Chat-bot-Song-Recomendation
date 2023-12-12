@@ -1,0 +1,26 @@
+<html>
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Registration </title>  
+    </head>
+    <body text="green">
+        <div align="center">
+          <div align="center" class="border">
+             <div class="header">
+                <h1 class="word">REGISTRATION</h1>
+             </div></br></br></br>
+            <h2 class="word">
+                <form action="{{ url_for('register') }}" method="post">
+                  <!-- <div class="msg">{{ msg }}</div> -->
+                  
+                   Username: <input id="username" name="username" type="text" placeholder="Enter Your username" class="textbox"/></br></br>
+                   Password: <input id="password" name="password" type="password" placeholder="Enter Your password" class="textbox"/></br></br>
+                   E-mail: <input id="email" name="email" type="text" placeholder="Enter Your email" class="textbox"/></br></br></br>
+                  
+                    <input type="submit" class="btn" value="submit"></br></br>
+                </form>
+            </h2>
+           </div>
+    </body>
+</html>

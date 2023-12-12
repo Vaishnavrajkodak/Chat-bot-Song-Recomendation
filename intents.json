@@ -1,0 +1,211 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        
+        "hi how are you",
+        "Hello:<a href='love'>hi</a>",
+        "Hello, what can I help you with?",
+        "Good day! How may I assist you?",
+        "Hey! How's it going?",
+        "Hi there, how can I assist you today?",
+        "Hi there! How may I help you today?"
+
+        
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "by"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon.",
+        "Goodbye! Have a great day.",
+        "See you later, take care!",
+        "Bye for now! Come back soon.",
+        "Take care and have a great day!"
+      ]
+    },
+    {
+      "tag": "good",
+      "patterns": ["iam good","good","awsome","wondarful"],
+      "responses": [
+        "wow me too. we have somach music for u to make u more happy u like to hear",
+        "me too.you like to hear some music with me",
+        "come we can dance iam also in so good mood.send me ready"
+        
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": [
+        "You're welcome!",
+        "No problem!",
+        "My pleasure!",
+        "Glad I could help!",
+        "Anytime!"
+      ]
+    },
+
+    {
+      "tag": "no",
+      "patterns": ["no"],
+      "responses": [
+        "what type of song u like .we have all type of songs for u hete in our database"
+        
+      ]
+    },
+    {
+      "tag": "rock",
+      "patterns": ["dj","chillout","trap","rap","dappankuthe","adiche poli"],
+      "responses": [
+        "wow we have a large collaction of rap music.just send me rock and roll"
+        
+      ]
+    },
+    {
+      "tag": "rock2",
+      "patterns": ["rock","roll","rock and roll","rk and roll","rockandroll"],
+      "responses": [
+        "come  dance with me we can rock and roll<a href='chillout'>hi</a>"
+        
+        
+      ]
+    },
+
+    {
+      "tag": "yes",
+      "patterns": ["yes","ofcource","sure","i love it ","done"],
+      "responses": [
+        "if u want love song send me love"
+
+      ]
+    },
+    {
+      "tag": "ready",
+      "patterns": ["ready","rady","dance"],
+      "responses": [
+        "ok come hold my hands .i will give you best songs for dance<a href='chillout'>dance</a> ",
+        "ok come i will put best song for us<a href='chillout'>dance</a> "
+
+      ]
+    },
+    {
+      "tag": "gym",
+      "patterns": ["work out","workout","gym","for put in gym","i like to hear a song when workout","to put in gym"],
+      "responses": [
+        "ok<a href='chillout'>dance</a> ",
+        "ok come i will put best song for us<a href='chillo'>dance</a> ",
+        "Let's turn up the music and get moving! <a href='gym'>workout</a>",
+        "What kind of music do you like to listen to during your workout?",
+        "Studies have shown that listening to music during exercise can increase motivation and endurance. Ready to give it a try? <a href='gym'>workout</a>",
+        "Whether you're into rap, rock, or pop, we've got the perfect workout playlist for you!  <a href='gym'>workout</a>",
+        "Music is a great way to get in the zone and push yourself during your workout. Let's find the perfect song to pump you up!  <a href='gym'>workout</a>",
+        "Some of my favorite workout tunes are by artists like Beyonce, Drake, and Daft Punk. What about you? <a href='gym'>workout</a>",
+        "Don't forget to choose songs with a strong beat to help you keep your pace and stay motivated.  <a href='gym'>workout</a>",
+        "If you're feeling tired or unmotivated, try switching up your workout music playlist. It can make all the difference!  <a href='gym'>workout</a>"
+
+
+      ]
+    },
+    {
+      "tag": "love",
+      "patterns": ["love","romantic"],
+      "responses": [
+        "here owsome love songs for u <a href='love'>hi</a> ",
+        "just enjoy sweet romantic music with people you love <a href='love'>love</a> ",
+        "come we will take u to paradise to love <a href='love'>love</a> ",
+        "hold the hand the people of u your love .i will put a best song for you<a href='love'>love</a> "
+
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    
+    {
+      "tag": "emotions",
+      "patterns": [
+        "how are you",
+        "are you happy",
+        "how is your day",
+        "are you good"
+
+      ],
+      "responses": [
+        "iam fine.iam so happy to talk to you. i will be more happy if i can find you best song",
+        "yes.iam so happy to talk to you. i will be more happy if i can find you best song",
+         "ofcource iam. i will be more happy if i can find you best song"      ]
+    },
+    
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "recomandation",
+      "patterns": [
+        "can u recomand a song for me",
+        "i wish i can hear a song ",
+        "i want hear a song",
+        "for a song",
+        "i want hear some song"
+
+        
+      ],
+      "responses": [
+        "ofcource, what genere of song you like",
+        "Sure, I'd love to recommend a song for you! Do you have any favorite artists or songs that I could use as a starting point?",
+        "Absolutely! What mood are you in right now? Maybe I can suggest a song that matches your current vibe.",
+        "I'd be happy to recommend a song! Is there a particular decade or era of music that you're into? "
+        
+      ]
+    },
+    
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    }
+  ]
+}
